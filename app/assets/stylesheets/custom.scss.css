@@ -1,0 +1,64 @@
+/*
+*= require social_share
+*/
+
+.social-share {
+	display: block;
+	text-align: center;
+	height: 60px;
+	margin-top: 40px;
+}
+
+a.ss-more-button {
+	display: none;
+}
+
+/*
+a.ss-button.ss-facebook-share-button {
+	background: transparent;
+}
+
+.social-share a.ss-facebook-share-button:hover {
+	background-color: transparent;
+}
+
+.social-share a.ss-twitter-share-button:hover {
+	background-color: transparent;
+}
+
+.social-share a.ss-google-plus-share-button:hover {
+	background-color: transparent;
+}
+
+.social-share a.ss-reddit-share-button:hover {
+	background-color: transparent;
+}
+
+.ss-icon-facebook {
+	color: #0f2350;
+}
+
+a.ss-button.ss-twitter-share-button {
+	background: transparent;
+}
+
+.ss-icon-twitter {
+	color: #0f2350;
+}
+
+a.ss-button.ss-google-plus-share-button {
+	background: transparent;
+}
+
+.ss-icon-google-plus {
+	color: #0f2350;
+}
+
+a.ss-button.ss-reddit-share-button {
+	background: transparent;
+}
+
+.ss-icon-reddit {
+	color: #0f2350;
+}
+*/

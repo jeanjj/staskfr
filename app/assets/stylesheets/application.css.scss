@@ -1,0 +1,939 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require social_share
+ */
+@import "font-awesome";
+
+
+
+/* categories and themes on home page */
+
+/*a#buttoncategories.btn.btn-icon.glyphicon.glyphicon-filter {
+	font-size: 2em;
+	width: 50px;
+	height: 50px;
+	background: #ecf6fe;
+	border-radius: 0px;
+	display: none;
+}*/
+
+
+/*.aside-container {
+	background: #ecf6fe;
+	bottom: 0;
+	box-shadow: 0 0 0 0 transparent;
+	left: 0;
+	max-width: 100%;
+	top: 0;
+	width: 50%;
+	z-index: 13;
+	-webkit-backface-visibility: hidden;
+}*/
+
+div#indexlists.row {
+	display: -webkit-flex;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.checkbox input[type="checkbox"] {
+	margin-left: 0px;
+	margin-top: 4px;
+}
+
+.row {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#signupform {
+	margin-bottom: 90px;
+}
+
+#signinform {
+	margin-bottom: 90px;
+}
+
+input#user_remember_me.boolean.optional.form-control {
+	margin-left: 110px;
+	margin-top: -5px;
+}
+
+div.container.row {
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 100%;
+}
+
+.main_content {
+	margin-top: 80px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+input.btn.btn-default {
+	color: black;
+	font-family: Avenir;
+}
+
+.btn-default:hover {
+	background-color: transparent;
+	border-color: transparent;
+	color: #23527c;
+}
+
+.btn-default a:hover {
+	color: #23527c;
+}
+
+h1, h4, a {
+	color: black;
+	font-family: Avenir;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	background-color: #fff;
+}
+
+#backedit a {
+	color: black;
+	font-family: Avenir;
+	margin-top: 30px;
+	margin-left: 50px;
+	font-size: large;
+}
+
+.panel {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.panel-heading {
+	border-bottom: 1px solid #ebf5f7;
+	padding: 10px 15px;
+}
+
+.panel-body {
+	padding: 0px;
+}
+
+.panel-footer {
+	background-color: transparent;
+	border: none;
+}
+
+div.alert {
+	margin-left: 30px;
+}
+
+/* index */
+
+.main-container {
+	width: 100%;
+}
+
+#menu {
+	height: 100%;
+	font-size: 20px;
+}
+
+.fade.in {
+	margin-top: 70px;
+}
+
+.modal-content {
+	border-radius: 0px;
+}
+
+.modal-dialog {
+	width: 100%;
+	margin: 0px;
+}
+
+#homecategtheme {
+	margin-top: 30px;
+	margin-bottom: 60px;
+}
+
+#categorieslist {
+	text-align: center;
+}
+
+#recipeslist {
+	margin-left: 100px;
+}
+
+#downbar {
+	width: 100%;
+	height:50px;
+}
+
+#indexthemes {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #c6cfdb;
+	padding: 15px 5px 25px;
+	width: 70%;
+}
+
+#indexthemedesc a {
+	font-weight: 100;
+}
+
+/* navbar */
+
+#navhome {
+	background-color: #fff;
+	border-bottom: 1px solid #f0908d;
+	border-radius: none;
+	height: 70px;
+}
+
+#navcontainer {
+	width: 90%;
+}
+
+#butcat {
+	width: 400px;
+	height: 100%;
+	display: -webkit-flex;
+	margin-left: 60px;
+}
+
+#butcat p {
+	margin-left: 20px;
+}
+
+#navbrand {
+	padding: 12px 5px;
+	height: 70px;
+}
+
+#navbrand a {
+	color: #f0908d;
+	text-decoration: none;
+	font-family: Futura;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+#sign {
+	display: -webkit-inline-box;
+	height: 70px;
+} 
+
+#sign ul {
+	display: -webkit-inline-box;
+	height: 70px;
+	padding: 20px 5px;
+} 
+
+#sign li a {
+	color: black;
+	font-family: Avenir;
+	font-weight: 500;
+	padding: 20px 15px;
+	font-size: 20px;
+}
+
+
+/* screen */
+
+#carrousel {
+	width: 100%;
+}
+
+a.carousel-control.left {
+	opacity: 0;
+}
+
+a.carousel-control.right {
+	opacity: 0;
+}
+
+#screen {
+	background-color: transparent;
+	width: 100%;
+	margin-right: none;
+	margin-left: none;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 70px;
+}
+
+.carousel-caption {
+	left: 60%;
+	right: 0%;
+}
+
+#catchphrase {
+	text-align: center;
+}
+
+p#catchphrase {
+	left: 70%;
+	right: 0%;
+	text-align: justify;
+	line-height: 1em;
+	font-size: 5em;
+	color: white;
+	font-family: Futura;
+}
+
+
+/* new theme */
+
+.form-control {
+	width: 50%;
+}
+
+div.input.text.required.recipe_description {
+	margin-top: 25px;
+}
+
+label.string.optional {
+	margin-right: 25px;
+}
+
+label.url.optional {
+	margin-right: 35px;
+}
+
+label.text.optional {
+	margin-right: 25px;
+}
+
+#recipe_category_id {
+	margin-top: 25px;
+}
+
+.links {
+	margin-top: 20px;
+}
+
+div.links a {
+	color: black;
+}
+
+.nested-fields {
+	margin-top: 25px;
+}
+
+/* show */
+
+h1 {
+	text-align: center;
+} 
+
+#themetitle_show {
+	height: 100%;
+	padding: 0px 0px;
+	position: relative;
+	background-color: #e9dfe5;
+	margin-top: 70px;
+}
+
+div#infodirlists.row {
+	margin-top: 50px;
+}
+
+#infocontreinfo {
+	display: -webkit-inline-box;
+	border: 1px solid #f2f2f2 ;
+	border-radius: 4px;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+
+#recipe_info {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	text-align: center;
+	margin-top: 30px;
+}
+
+#recipe_info p {
+	font-size: 2em;
+	font-family: Futura;
+}
+
+div#description {
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+#description {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin-top: 30px;
+}
+
+#description p {
+	font-family: Avenir;
+	font-size: 1.25em;
+}
+
+#buttonscol {
+	background-color: white;
+	height: 40px;
+	margin-top: 80px;
+}
+
+div#informationslist.lists {
+	width: 80%;
+	float: right;
+	margin-right: 80px;
+}
+
+div#directionslist.lists {
+	width: 80%;
+	float: right;
+	margin-right: 80px;
+}
+
+#showlist {
+	margin-top: 40px;
+}
+
+#sharecol {
+	background-color: transparent;
+}
+
+#sharecol a {
+	font-size: 1.75em;
+}
+
+#infocol {
+	text-align: center;
+}
+
+#infocol a {
+	font-size: 1.75em;
+	border: 2px solid #e9dfe5;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+#astucescol {
+	text-align: center;
+}
+
+#astucescol a {
+	font-size: 1.75em;
+	border: 2px solid #e9dfe5;
+	border-radius: 4px;
+	padding: 15px;
+}
+
+a#add_button.btn {
+	border: 2px solid #e9dfe5;
+}
+
+#info {
+	padding: 15px;
+	text-align: center;
+}
+
+div#votes {
+	padding: 15px;
+	border-right: 1px solid #f2f2f2;
+	height: 100%;
+}
+
+#contrebutton {
+	padding: 15px;
+	border-left: 1px solid #f2f2f2;
+}
+
+#linkinfo {
+}
+
+#linkinfo a {
+	color: black;
+	font-size: 1.25em;
+}
+
+#contrelien {
+	color: black;
+	margin-top: 20px;
+}
+
+#contrelien a {
+	color: #ee827c;
+	font-size: 1em;
+	margin-bottom: 15px;
+}
+
+#directions {
+	text-align: center;
+}
+
+#directionslist {
+	margin-top: 50px;
+}
+
+div#tips {
+	margin-bottom: 30px;
+	border: 1px solid #f2f2f2;
+	border-radius: 4px;
+}
+
+#tips {
+	font-family: Avenir;
+}
+
+div#step {
+	font-size: 1.25em;
+	font-family: Avenir;
+	border-right: 1px solid #f2f2f2;
+	text-align: center;
+	padding: 15px;
+}
+
+#votes a {
+	font-size: 1em;
+	text-align: center;
+}
+
+.btn-default {
+	color: black;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-default:hover {
+	color: black;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-default:active {
+	color: black;
+	border: none;
+	background-color: transparent;
+}
+
+.btn-default:focus {
+	color: black;
+	border: none;
+	background-color: transparent;
+	outline:none;
+}
+
+input[type="submit"] {
+	color: black;
+	border: none;
+	background-color: transparent;
+}
+
+#new_information {
+	margin-top: 30px;
+}
+
+#new_direction {
+	margin-top: 30px;
+}
+
+ul {
+	list-style: none;
+}
+
+.i.fa.fa-ban {
+	cursor: pointer;
+	color: black;
+}
+
+#addonshow.collapse {
+	margin: auto;
+}
+
+#addonshow {
+	border: none;
+	background-color: transparent;
+	width: 30%;
+}
+
+#addonshowcollapsed {
+	min-height: 20px;
+	padding: 0px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+#addshow {
+	margin-top: 30px;
+	width: 65%;
+	float: right;
+}
+
+.lists#directionslist {
+	display: none;
+}
+
+/* modal */
+
+
+div.modal-content {
+	padding: 25px 25px
+}
+
+#new_contrelien {
+	vertical-align: middle;
+	margin-top: 25px;
+}
+
+input#contrelien_url {
+	margin-top: 10px;
+}
+
+/*FOOTER*/
+
+footer {
+	margin-top: 50px;
+    clear: both;
+    width: 100%;
+    padding: 1rem 0px;
+    border-top: 1px solid #E9E9E9;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    z-index: 1030;
+    background-color: #e9dfe5;
+}
+
+.wide_wrapper {
+	margin-top: 30px;
+	margin-bottom: 30px;
+    width: 95%;
+    max-width: 1440px;
+}
+
+footer #logo {
+    width: 40px;
+    display: -webkit-box;
+    float: left;
+    font-family: Avenir;
+	font-size: 1.25em;
+	margin-left: 30px;
+}
+
+.navigation {
+    text-align: center;
+    padding: 0rem 2.5% 0px 0px;
+}
+.navigation {
+	text-align: center;
+	float: none;
+    font-family: "brandon-grotesque",sans-serif;
+    font-weight: 700;
+    color: black;
+}
+.navigation a {
+    color: black;
+    margin-left: 1.5rem;
+    margin-right: 15px;
+    line-height: 1;
+    display: inline-block;
+}
+.pad-left-footer {
+	float: left;
+}
+
+
+/* media queries extra-small */
+
+
+
+@media only screen and (max-width : 480px){
+
+	#navhome {
+	background-color: #fff;
+	border-bottom: 1px solid #f0908d;
+	border-radius: none;
+	height: 100px;
+	}
+
+	#screen {
+		margin-top: 70px;
+	}
+
+	div.navbar-brand {
+		margin-left: 0px;
+	}
+
+	/*a#buttoncategories.btn.btn-icon.glyphicon.glyphicon-filter {
+	font-size: 1em;
+	display: block;
+	}*/
+
+	/*.aside-container {
+		display: none;
+	}
+	*/
+	#categorieslist a {
+		font-size: .5em;
+	}
+
+	#recipeslist {
+		font-size: .75em;
+		margin-left: 0px;
+		width: 100%;
+	}
+
+	.carousel-caption {
+		left: 60%;
+		right: 0%;
+	}
+
+	p#catchphrase {
+	text-align: justify;
+	font-size: 1.5em;
+	color: white;
+	font-family: Futura;
+	}
+
+	#themetitle_show {
+		background-color: #e9dfe5;
+		margin-top: 70px;
+	}
+
+	#recipe_info {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin-bottom: 50px;
+	}
+
+	div#description {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+	#description {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	}
+
+	#buttonscol {
+		background-color: white;
+		height: 40px;
+	}
+
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+
+/* media queries small */
+
+@media only screen and (max-width : 768px){
+
+		#navhome {
+	background-color: #fff;
+	border-bottom: 1px solid #f0908d;
+	border-radius: none;
+	height: 80px;
+	}
+
+	#screen {
+		margin-top: 70px;
+	}
+	
+	div.navbar-brand {
+		margin-left: 0px;
+	}
+
+	/*a#buttoncategories.btn.btn-icon.glyphicon.glyphicon-filter {
+	font-size: 1.5em;
+	display: block;
+	}*/
+
+/*	.aside-container {
+		display: none;
+		position: absolute;
+    	left: 0;
+    	top: auto;
+	}*/
+
+	#homecategtheme {
+		font-size: 1em;
+	}
+
+	#recipeslist {
+		margin-left: 25px;
+		width: 100%;
+	}
+
+	#categorieslist a {
+		font-size: 0.75em;
+	}
+
+	.carousel-caption {
+		left: 65%;
+		right: 0%;
+	}
+
+	p#catchphrase {
+		text-align: justify;
+		line-height: 1em;
+		font-size: 2em;
+		color: white;
+		font-family: Futura;
+	}
+
+	#themetitle_show {
+		background-color: #e9dfe5;
+		margin-top: 70px;
+	}
+
+	#recipe_info {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin-bottom: 30px;
+	}
+
+	div#description {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+	#description {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	}
+
+	#buttonscol {
+		background-color: white;
+		height: 40px;
+	}
+
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+/* media queries quite small */
+
+
+@media only screen and (max-width : 1021px){
+
+
+	#screen {
+		margin-top: 70px;
+	}
+
+	div#indexlists.row {
+		margin-left: 0px;
+	}
+
+/*	.aside-container {
+		display: none;
+	}*/
+
+
+	#butcat {
+	width: 100px;
+	height: 100%;
+	display: -webkit-flex;
+	margin-left: 20px;
+}
+
+	#recipeslist {
+		margin-left: 50px;
+		width: 100%;
+	}
+
+	#categorieslist a {
+		font-size: .75em;
+	}
+
+	/*a#buttoncategories.btn.btn-icon.glyphicon.glyphicon-filter {
+	font-size: 1.5em;
+	display: block;
+	}*/
+
+	.carousel-caption {
+		left: 65%;
+		right: 0%;
+	}
+
+	p#catchphrase {
+	text-align: justify;
+	line-height: 1em;
+	font-size: 4em;
+	color: white;
+	font-family: Futura;
+	}
+
+	#themetitle_show {
+		background-color: #e9dfe5;
+		margin-top: 70px;
+	}
+
+	#recipe_info {
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	margin-bottom: 30px;
+	}
+
+	#description {
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	}
+
+	#buttonscol {
+		background-color: white;
+		height: 40px;
+	}
+
+	.row {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}

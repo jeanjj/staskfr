@@ -1,0 +1,75 @@
+#screen
+	#this-carousel-id.carousel.slide
+		.carousel-inner
+			.item.active
+				= image_tag("whisper.jpg", :alt => "whisper feed", :width => 1300,:height => 650)
+				- flash.each do |name, msg|
+					= content_tag :div, msg, class: "alert"
+				.carousel-caption
+					%p#catchphrase Tourner 
+					%p#catchphrase Informations
+					%p#catchphrase Into actions
+
+			.item
+				%img{:alt => "", :src => "http://placehold.it/1300x600"}/
+				.carousel-caption
+					%p Caption text here
+			.item
+				%img{:alt => "", :src => "http://placehold.it/1300x600"}/
+				.carousel-caption
+					%p Caption text here
+
+		%a.carousel-control.left{"data-slide" => "prev", :href => "#this-carousel-id"} ‹
+		%a.carousel-control.right{"data-slide" => "next", :href => "#this-carousel-id"} ›
+.row#downbar
+
+.row#indexlists
+	#modalcategories.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+		.modal-dialog
+			.modal-content
+				.modal-header
+					%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+						%span{"aria-hidden" => "true"} ×
+					%h4#myModalLabel.modal-title Categories
+				.modal-body
+					%div#categorieslist
+						- Category.all.each do |category|
+							%h2= link_to category.name, recipes_path(category: category.name)
+				.modal-footer
+					.wide_wrapper
+						%nav.navigation
+							/ %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :target => "_blank", :title => "FAQ"}
+							/ 	%i.fa.fa-question.fa-2x
+							%a{"data-placement" => "top", "data-toggle" => "tooltip", :onclick => "myFace()", :target => "_blank", :title => "Share infos !"}
+								%i.fa.fa-facebook-square.fa-2x.click
+							%a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "https://monolok.github.io/online", :target => "_blank", :title => "Meet the developer"}
+								%i.fa.fa-github.fa-2x
+							/ %a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "#", :target => "_blank", :title => "Donate BTC !"}
+							/ 	%i.fa.fa-btc.fa-2x
+							%a{"data-placement" => "top", "data-toggle" => "tooltip", :href => "mailto:jeanhuguesbc@hotmail.com", :title => "Say hi !"}
+								%i.fa.fa-paper-plane.fa-2x
+						.pad-left-footer
+							%i.fa.fa-copyright
+						.pad-left-footer StaskStact
+						.pad-left-footer= Time.now.year
+
+
+
+
+	/ %div.aside-container#aside
+	/ 	%div.aside-content
+	/ 		%div.aside-header
+	/ 			%h1#homecategtheme Categories
+	/ 		%div#categorieslist
+	/ 			- Category.all.each do |category|
+	/ 				%h2= link_to category.name, recipes_path(category: category.name)
+	
+	/ %a.btn.btn-icon#button{:href => "javascript:toggleDiv('myContent');", class: "glyphicon glyphicon-filter"}
+
+	%div.main-container#recipeslist
+		%h1#homecategtheme Themes
+		%div#recipeslist
+			- @recipes.each do |recipe|
+				%div#indexthemes
+					%h2= link_to recipe.title, recipe
+					%h4#indexthemedesc= link_to recipe.description, recipe

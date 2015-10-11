@@ -41,26 +41,26 @@
 								.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "mySmallModalLabel", :class => "#{information.id}", :role => "dialog", :tabindex => "-1"}
 									.modal-dialog.modal-sm
 										.modal-content
-											%p Adding a counterlink allow you to criticise the information provided by the belonging link
+											%p Ajouter un "contrelien" vous permet de contredire une information
 											= form_for @contrelien, url: add_contreinfo_path(information.id) do |c|
-												%p= c.text_field 'title', placeholder: 'add title'
-												%p= c.text_field 'url', placeholder: 'add url'
-												%p= button_to "ADD"
+												%p= c.text_field 'title', placeholder: 'ajouter un titre'
+												%p= c.text_field 'url', placeholder: 'ajouter une url'
+												%p= button_to "AJOUTER"
 						
-					%div.col-md-1#contrebutton{"data-placement" => "right", "data-toggle" => "tooltip", :title => "Click here to add a link to criticize the information", :type => "button"}
+					%div.col-md-1#contrebutton{"data-placement" => "right", "data-toggle" => "tooltip", :title => "Cliquer ici pour contredire cette information", :type => "button"}
 						%p Contre
 						.button.i.fa.fa-ban{"data-target" => ".#{information.id}", "data-toggle" => "modal", :type => "button"}	
 
 					
 		%div#addshow
 			%a.btn#add_button{"aria-controls" => "addonshowinfo", "aria-expanded" => "false", "data-toggle" => "collapse", :href => "#addonshowinfo"}
-				Add an information
+				Ajouter une information
 			#addonshowinfo.collapse
 				.well#addonshowcollapsed
 					= form_for @info, url: add_info_recipe_path do |f|
-						%p= f.text_field 'title', placeholder:'Add a title'
-						%p= f.text_field 'url', placeholder:'Add an url'
-						%p= button_to "Add information"
+						%p= f.text_field 'title', placeholder:'Ajouter un titre'
+						%p= f.text_field 'url', placeholder:'Ajouter une url'
+						%p= button_to "Ajouter une information"
 
 	.lists#directionslist
 		%ul

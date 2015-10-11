@@ -10,14 +10,14 @@
 	.panel-body
 		= f.input :title, input_html: { class: 'form-control' }
 		= f.input :description, input_html: { class: 'form-control' }
-		= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Choose a category"}
-		%h2{:style => "margin-top: 60px"} Informations and tips 
-		%h5 Add at least one info or one astuce to your theme, you will be able to add more after the them would be created
+		= f.collection_select :category_id, Category.all, :id, :name, {prompt: "Sélectionner une catégorie"}
+		%h2{:style => "margin-top: 60px"} Informations et astuces 
+		%h5 Ajouter au moins une information ou une astuce, vous pourrez en créer d'autres une fois le thème enregistré.
 		%h3{:style => "margin-top: 60px"} Informations
 		= f.simple_fields_for @info do |i|
 			= i.input :title, input_html: { class: "form-input form-control", :style => "margin-bottom:10px"}
 			= i.input :url, input_html: { class: "form-input form-control", :style => "margin-bottom:10px"}
-		%h3 Tips
+		%h3 Astuces
 		= f.simple_fields_for @direction do |d|
 			= d.input :title, input_html: { class: "form-input form-control", :style => "margin-bottom:10px"}
 			= d.input :url, input_html: { class: "form-input form-control", :style => "margin-bottom:10px"}
@@ -25,4 +25,4 @@
 			= d.input :step, input_html: { class: "form-input form-control", :style => "margin-bottom:10px"}
 		
 	.panel-footer
-		= f.button :submit, value:"Create Theme", class: "btn btn-default"
+		= f.button :submit, value:"Créer un thème", class: "btn btn-default"

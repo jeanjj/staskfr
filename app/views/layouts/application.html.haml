@@ -16,13 +16,13 @@
 		- if user_signed_in?
 			.col-xs-4.col-sm-3.col-md-3#sign
 				%ul
-					%li= link_to "New Theme", new_recipe_path
-					%li= link_to "Sign Out", destroy_user_session_path, method: :delete
+					%li= link_to "Nouveau thème", new_recipe_path
+					%li= link_to "Se déconnecter", destroy_user_session_path, method: :delete
 		- else
 			.col-xs-4.col-sm-3.col-md-3#sign
 				%ul
-					%li= link_to "Sign up", new_user_registration_path
-					%li= link_to "Sign in", new_user_session_path
+					%li= link_to "S'inscrire", new_user_registration_path
+					%li= link_to "Se connecter", new_user_session_path
 
 	.container.row
 
